@@ -1,0 +1,133 @@
+.Loginform{
+    max-width: 500px;
+    min-width: 200px;
+}
+.TableAccounts{
+    max-width:700px;
+    min-width: 250px;
+    font-size: 20px;
+}
+
+.AvoidOverflow {
+    display: inline-block; /* Make the span an inline-block to respect width */
+    width: 300px; /* Set the maximum width */
+    white-space: nowrap; /* Keep the text in a single line */
+    overflow: hidden; /* Prevent the element from overflowing its parent */
+    text-overflow: ellipsis; /* Display an ellipsis (...) to represent clipped text */
+  }
+
+  .FooterMain{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+.Manager{
+  height: 100vh;
+}
+.Footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  margin-top: 100vh;
+  background-color: rgb(68, 66, 66);
+  color: white;
+  font-size: 12px;
+
+}
+
+.multi-colored-button {
+  background: linear-gradient( rgb(98, 14, 158), violet);
+  border: none;
+  border-radius: 5px;
+  color: rgb(12, 12, 12);
+  padding: 10px 20px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+}
+/* TransparentButton.css */
+.transparent-button {
+  background-color: transparent;
+  border: 2px solid transparent;
+  color: #000; /* Text color */
+  padding: 10px 20px; /* Adjust padding as needed */
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.transparent-button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+  border-color: #000; /* Border color on hover */
+  color: #000; /* Text color on hover */
+}
+
+.transparent-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Optional focus shadow */
+}
+
+
+.multi-colored-button:hover {
+  background: linear-gradient(45deg, violet, indigo);
+}
+body {
+  font-size: 16px; /* or any base size you prefer */
+  font-family: Arial, sans-serif; /* or any preferred font */
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+.text-container {
+  width: 400px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  text-align: justify;
+  word-wrap: break-word;
+  line-height: 1.6; /* Adjust line height as needed */
+}
+/* Ensures the last line is justified */
+.text-container::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+.textstyle {
+  width: 100%;
+  white-space: inherit;
+  text-align: justify;
+  hyphens: auto; /* Allow hyphenation */
+}
+
+.imgaeLogo{
+  width: 5%;
+  height: 5%;
+  margin-bottom: 3px;
+  margin-right: 4px;
+  position: relative;
+
+}
+
+.sidebar{
+  width: 75%;
+  position: fixed;
+  font-size: 17px;
+  background: #ffffff;
+  color: #525151;
+}
+.list-group-item {
+  border: none; /* Remove borders if that's causing dividers */
+}
+.SideItems{
+  color:#525151;
+  margin-bottom: 6px;
+  
+}
+.SideIcon{
+  color: #797878;
+  font-size: 19px;
+}

@@ -1,0 +1,43 @@
+1.  Routing
+2.  Login
+3.  SignIn
+4.  CreateAccount
+    a   Who is bank Manager
+    b.
+5.  Deposit
+    a.User Balance
+    b. Account Detail
+    c. is Freezed
+
+6.  Withdraw
+    a.User Balance
+    b. Account Detail
+    c. is Freezed
+
+7.   TransferAmount
+    a.User Balance
+    b. Account Detail
+    c. is Freezed
+
+8.   Manager()
+    a Change Manager
+    b.  Freez Account (ManageAccount)11user
+    c.  Unfreez Account(ManageAccount)11 user
+    d.  Pay Interest(payinterese)11
+    e.  Check Bank Balance (Emergency.jsx)
+    f.  Chek User Balance;User(ManageAccount)-------user
+    g.  All Accounts(AccountsDetail.jsx)++++++user
+    h.  User Account Detail(AccountsDetail.jsx)++++++user
+    i.  Emergency Withdraw(Emergency.jsx)
+
+New-Item -ItemType File PayInterest.jsx, AccountsDetail.jsx, Emergency.jsx
+
+New-Item -ItemType File Routing.jsx, Login.jsx, SignIn.jsx, CreateAccount.jsx, Deposit.jsx, Withdraw.jsx, TransferAmount.jsx, Manager.jsx
+
+mistaks
+icon size---
+xxxxxx remove--
+manager profile--
+add congrats icon---
+home text size and design--
+add close button in sideba increase sidebar text size
