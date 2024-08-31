@@ -30,7 +30,7 @@
     h.  User Account Detail(AccountsDetail.jsx)++++++user
     i.  Emergency Withdraw(Emergency.jsx)
 
-New-Item -ItemType File PayInterest.jsx, AccountsDetail.jsx, Emergency.jsx
+
 
 New-Item -ItemType File Routing.jsx, Login.jsx, SignIn.jsx, CreateAccount.jsx, Deposit.jsx, Withdraw.jsx, TransferAmount.jsx, Manager.jsx
 

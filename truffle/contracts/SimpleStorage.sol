@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.4.22 <0.9.0;
+pragma solidity ^0.8.0;
 
 contract SimpleStorage {
-  uint256 value;
+  uint256 public value;
   address public owner;
 
   constructor(){

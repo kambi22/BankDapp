@@ -82,7 +82,7 @@ module.exports = {
     //   websocket: true         // Enable EventEmitter interface for web3 (default: false)
     // },
     sepolia: {//deploy comand: truffle migrate --network sepolia
-      provider: () => new HDWalletProvider(MNEMONIC, `https://sepolia.infura.io/v3/6ba889e5eb3544a5b42ec8998664de96`),
+      provider: () => new HDWalletProvider(MNEMONIC, `https://sepolia.infura.io/v3/976912e38cc7411298f6682305819c51`),
       network_id: 11155111,       // Sepolia's id
       confirmations: 2,    // # of confirmations to wait between deployments. (default: 0)
       timeoutBlocks: 200, // # of blocks before a deployment times out  (minimum/default: 50)
@@ -97,14 +97,28 @@ module.exports = {
     //   timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
     //   skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
     // },
-    holesky: {//deploy comand: truffle migrate --network holesky
-      provider: () => new HDWalletProvider(MNEMONIC, `https://holesky.infura.io/v3/6ba889e5eb3544a5b42ec8998664de96`),
-      network_id: 17000,       // holesky's id
-      confirmations: 2,    // # of confirmations to wait between deployments. (default: 0)
-      timeoutBlocks: 250, // # of blocks before a deployment times out  (minimum/default: 50)
-      skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
-    },
-    //
+    // holesky: {//deploy comand: truffle migrate --network holesky
+    //   provider: () => new HDWalletProvider(MNEMONIC, `https://holesky.infura.io/v3/6ba889e5eb3544a5b42ec8998664de96`),
+    //   network_id: 17000,       // holesky's id
+    //   confirmations: 2,    // # of confirmations to wait between deployments. (default: 0)
+    //   timeoutBlocks: 250, // # of blocks before a deployment times out  (minimum/default: 50)
+    //   skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
+    // },
+  
+        holesky: {
+          provider: () => new HDWalletProvider(
+            MNEMONIC, // Replace with your actual mnemonic
+            `https://holesky.infura.io/v3/976912e38cc7411298f6682305819c51` // Replace with your Infura project ID
+          ),
+          network_id: 17000, // Replace with the Holesky network ID
+          gas: 5500000, // Gas limit
+          confirmations: 2, // Number of confirmations to wait between deployments
+          timeoutBlocks: 200, // Number of blocks before a deployment times out
+          skipDryRun: true, // Skip dry run before migrations
+        },
+    
+   
+    
     // Useful for private networks
     // private: {
     //   provider: () => new HDWalletProvider(MNEMONIC, `https://network.io`),

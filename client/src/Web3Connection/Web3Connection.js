@@ -1,11 +1,13 @@
 import { useEffect } from "react";
 import Web3 from "web3";
 import Bank from '../contracts/Bank.json'
+import simpleAbi from '../contracts/SimpleStorage.json'
 //import { Contract } from "web3-eth-contract";
 
 let web3;
 let contract;
 let account;
+let simple;
 
 const Connection = async () => {
     if (window.ethereum) {
@@ -17,13 +19,16 @@ const Connection = async () => {
         account = accounts[0];
         console.log("account si",account)
         const abi = Bank.abi;
+        const SimpleAbi = simpleAbi.abi;
         const NetworkId = await web3.eth.net.getId();
         const networkData = Bank.networks[NetworkId];
+        const simpleData = simpleAbi.networks[NetworkId];
+
         const contractAddress = networkData && networkData.address
         if (!contractAddress) {
           throw new Error('Contract not deployed on the current network');
         }
-  
+        const simple = new web3.eth.Contract(SimpleAbi, simpleData.address)
         contract = new web3.eth.Contract(abi, contractAddress);
       return account;
 

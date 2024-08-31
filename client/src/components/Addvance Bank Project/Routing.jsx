@@ -18,6 +18,7 @@ import Footer from "./Footer";
 import { Contract } from "web3";
 import BecomeManager from "./BecomeManager";
 import AccountsDetail from "./AccountsDetail";
+import Simple from "./simpleStorage";
 
 
 
@@ -52,6 +53,7 @@ const Routing = () => {
           <Route path="/manager/payiterest" element={<PayIterest />} />
           <Route path="/manager/manageAccount" element={<ManageAccount />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/simple" element={<Simple />} />
 
 
         </Routes>

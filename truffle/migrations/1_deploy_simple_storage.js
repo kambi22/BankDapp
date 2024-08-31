@@ -1,8 +1,8 @@
-// const SimpleStorage = artifacts.require("SimpleStorage");
+const SimpleStorage = artifacts.require("SimpleStorage");
 
-// module.exports = function (deployer) {
-//   deployer.deploy(SimpleStorage);
-// };
+module.exports = function (deployer) {
+  deployer.deploy(SimpleStorage);
+};
 // const Bank = artifacts.require("Bank");
 
 // module.exports = function (deployer) {
@@ -28,9 +28,9 @@
 // module.exports = function (deployer) {
 //   deployer.deploy(DutchAuction);
 // };
-const AdvanceBank = artifacts.require("AdvanceBank");
+// const AdvanceBank = artifacts.require("AdvanceBank");
 
-module.exports = function(deployer) {
-  deployer.deploy(AdvanceBank);
-};
+// module.exports = function(deployer) {
+//   deployer.deploy(AdvanceBank);
+// };
 
