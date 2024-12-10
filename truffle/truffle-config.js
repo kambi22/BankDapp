@@ -43,7 +43,7 @@
 
 // require('dotenv').config();
 // const { MNEMONIC, PROJECT_ID } = process.env;
-const MNEMONIC = "banana alert crisp six print cruise sell segment advice table tomato matter";
+const MNEMONIC = "";
  const HDWalletProvider = require('@truffle/hdwallet-provider');
 // const HDWalletProvider = require('@truffle/hdwallet-provider');
 
@@ -82,7 +82,7 @@ module.exports = {
     //   websocket: true         // Enable EventEmitter interface for web3 (default: false)
     // },
     sepolia: {//deploy comand: truffle migrate --network sepolia
-      provider: () => new HDWalletProvider(MNEMONIC, `https://sepolia.infura.io/v3/976912e38cc7411298f6682305819c51`),
+      provider: () => new HDWalletProvider(MNEMONIC, ``),
       network_id: 11155111,       // Sepolia's id
       confirmations: 2,    // # of confirmations to wait between deployments. (default: 0)
       timeoutBlocks: 200, // # of blocks before a deployment times out  (minimum/default: 50)
@@ -108,7 +108,7 @@ module.exports = {
         holesky: {
           provider: () => new HDWalletProvider(
             MNEMONIC, // Replace with your actual mnemonic
-            `https://holesky.infura.io/v3/976912e38cc7411298f6682305819c51` // Replace with your Infura project ID
+            `` // Replace with your Infura project ID
           ),
           network_id: 17000, // Replace with the Holesky network ID
           gas: 5500000, // Gas limit
